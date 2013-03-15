@@ -138,7 +138,7 @@ function refresh() {
                   summary: '',
                   url: 'http://aokpmanifest.clockworkmod.com/mirror/chaos/' + device + '/' + path.basename(url.parse(href).path)
                 }
-                newManifest.roms.push(entry);
+                newManifest.roms.unshift(entry);
                 // console.log(entry);
               }
             });
