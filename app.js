@@ -130,12 +130,12 @@ function refresh() {
                 var android = $(rom.children[0]).text();
                 var version = $(rom.children[1]).text();
                 var type = $(rom.children[2]).text();
-              
+                var date= $(rom.children[3]).text();
               
                 var entry = {
                   device: device,
                   name: 'AOKP ' + android + ' ' + type + ' ' + version,
-                  summary: '',
+                  summary: date,
                   url: 'http://aokpmanifest.clockworkmod.com/mirror/chaos/' + device + '/' + path.basename(url.parse(href).path)
                 }
                 newManifest.roms.unshift(entry);
